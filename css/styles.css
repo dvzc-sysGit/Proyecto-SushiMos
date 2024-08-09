@@ -1,7 +1,8 @@
 :root {
     --fuenteTit: 'PT Sans', sans-serif;
     --fuentePar: 'Open Sand', sans-serif;
-    --slogP: "Playwrite DK Loopet";
+    --slogP: "Gupter", serif;
+    --slogP2: "Playwrite DK Loopet";
     --sec: #00144d;
     --sec2: #002999;
     --secC: #528ab8;
@@ -55,7 +56,7 @@ h1 {
 
 h2 {
     font-size: 4rem;
-    font-family: var(--slogP);
+    font-family: var(--slogP2);
 }
 
 h3 {
@@ -102,15 +103,15 @@ img {
 }
 
 .slogan {
-    font-size: 1.2rem;
+    font-size: 3rem;
     font-family: var(--slogP);
 }
 
 .header {
-    background-color: var(--sec);
-    -webkit-box-shadow: inset 0px 14px 50px -3px rgba(110,245,250,1);
+    background-color: var(--neg);
+     /* -webkit-box-shadow: inset 0px 14px 50px -3px rgba(110,245,250,1);
     -moz-box-shadow: inset 0px 14px 50px -3px rgba(110,245,250,1);
-    box-shadow: inset 0px 14px 50px -3px rgba(110,245,250,1);
+    box-shadow: inset 0px 14px 50px -3px rgba(110,245,250,1);  */
 }
 
 @media(min-width: 768px) {
@@ -429,7 +430,6 @@ h1 {
 
 .texto {
     font-family: var(--slogP);
-    font-size: 1.2rem;
 }
 
 .pading {
@@ -445,6 +445,14 @@ h1 {
 
 .cursiva {
     font-family: var(--slogP);
+    font-weight:400;
+    font-style:italic;
+}
+.cursiva2 {
+    font-family: var(--slogP);
+    font-weight:400;
+    font-style:italic;
+    font-size: 2rem;
 }
 
 @media(min-width: 768px) {
@@ -461,7 +469,7 @@ h1 {
 }
 
 .imagenPedido {
-    height: 60rem;
+    height: 100%;
 }
 
 .sidebar {

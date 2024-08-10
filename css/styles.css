@@ -103,7 +103,7 @@ img {
 }
 
 .slogan {
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-family: var(--slogP);
 }
 
@@ -231,6 +231,21 @@ img {
     margin-top: 40rem;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+@media(min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.cuadro {
+    background-color: var(--mate);
+    padding: 1rem;
+    border-radius: .5rem;
+}
 /*Parte menú*/
 .parrafoMenu {
     opacity: 0;

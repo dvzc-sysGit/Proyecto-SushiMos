@@ -23,3 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', checkVisibility);
     checkVisibility();
 });
+
+document.addEventListener('scroll', function() {
+    const button = document.getElementById('floatingButton');
+    const header = document.getElementById('header');
+    const main = document.getElementById('main');
+    const footer = document.getElementById('footer');
+      
+    const mainTop = main.getBoundingClientRect().top;
+    const footerTop = footer.getBoundingClientRect().bottom;
+
+    if (window.scrollY >= mainTop && window.scrollY < footerTop + window.innerHeight + (4*(window.innerHeight))){
+        button.classList.remove('hidden');
+    } else {
+        button.classList.add('hidden');
+    }
+});
+
+document.addEventListener('scroll', function() {
+    const button = document.getElementById('floatingButton');
+    const main2 = document.getElementById('main2');
+    const footer2 = document.getElementById('footer2');
+
+     const mainTop2 = main2.getBoundingClientRect().top;
+     const footerTop2 = footer2.getBoundingClientRect().bottom;
+
+     if (window.scrollY >= mainTop2 && window.scrollY < footerTop2 - window.innerHeight){
+         button.classList.remove('hidden');
+     } else {
+        button.classList.add('hidden');
+     }
+});

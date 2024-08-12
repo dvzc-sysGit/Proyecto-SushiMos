@@ -243,6 +243,36 @@ img {
     padding: 1rem;
     border-radius: .5rem;
 }
+.flotante{
+    position: fixed;
+    transform: rotate(90deg);
+    width: 15rem;
+    height: 4rem;
+    bottom: 19rem;
+    right: -5rem;
+    background-color: var(--neg);
+    border-radius: 5%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+.flotante:hover{
+    background-color:var(--sec);
+    transform: rotate(90deg) scale(1.1);
+}
+.hidden {
+    opacity: 0;
+}
+@media(min-width: 768px) {
+    .flotante{
+        position: fixed;
+         opacity: 1; 
+         bottom: 30rem;
+    } }
+
 /*Parte menú*/
 .parrafoMenu {
     opacity: 0;

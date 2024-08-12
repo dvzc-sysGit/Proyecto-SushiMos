@@ -58,15 +58,15 @@
     <main class="contenedor">
         <h1 class="cursiva">Acerca de nosotros...</h1>
         <div class="nosotros">
-            <div class="parrafoMenu">
+            <div class="interlineado"> 
                 <p class="parrafoMenu">
                     Dark kitchen es un restaurante virtual, que atiende a los clientes exclusivamente mediante entrega y
                     recogida mediante pedidos telefónicos y en línea.
-                <p> MO'S Sushi es un restaurante apasionado en la comida japonesa que lleva consigo las nuevas
-                    tendencias de la gastronomía
-                    con un estilo innovador de lo que son las Dark Kitchens. Nos complace preparar los mejores platillos
-                    y hacerlos llegar a su
-                    destino a fin de ofrecer una manera más flexible.</p>
+                </p>
+                <p class="parrafoMenu"> 
+                    MO'S Sushi es un restaurante apasionado en la comida japonesa que lleva consigo las nuevas
+                    tendencias de la gastronomía con un estilo innovador de lo que son las Dark Kitchens. 
+                    Nos complace preparar los mejores platillos y hacerlos llegar a su destino a fin de ofrecer una manera más flexible.
                 </p>
                 <p class="parrafoMenu">
                     Es impresionante cómo logramos combinar el enfoque en el delivery, la presentación, la temperatura,
@@ -74,8 +74,11 @@
                     para garantizar que la experiencia sea igual de buena como si estuvieran sirviendo en un restaurante
                     de lujo.
                 </p>
-            </div>
-            <img class="nosotros__imagen" src="src/4.jpeg" alt="imagen_Mos">
+             </div> 
+             <picture>
+                <source class="nosotros__imagen" loading="lazy" srcset="src/4.webp" type="image/webp">
+                <img class="nosotros__imagen" src="src/4.jpeg" alt="imagen_Mos">
+             </picture> 
         </div>
     </main>
 

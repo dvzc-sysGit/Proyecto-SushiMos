@@ -109,9 +109,6 @@ img {
 
 .header {
     background-color: var(--neg);
-     /* -webkit-box-shadow: inset 0px 14px 50px -3px rgba(110,245,250,1);
-    -moz-box-shadow: inset 0px 14px 50px -3px rgba(110,245,250,1);
-    box-shadow: inset 0px 14px 50px -3px rgba(110,245,250,1);  */
 }
 
 @media(min-width: 768px) {
@@ -434,6 +431,10 @@ h1 {
     }
 }
 
+.interlineado{
+    line-height: 1.6;
+    text-align: justify;
+}
 /*sección ubicación*/
 @media(min-width: 768px) {
     .cp {

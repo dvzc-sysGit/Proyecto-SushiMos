@@ -33,7 +33,7 @@ document.addEventListener('scroll', function() {
     const mainTop = main.getBoundingClientRect().top;
     const footerTop = footer.getBoundingClientRect().bottom;
 
-    if (window.scrollY >= mainTop && window.scrollY < footerTop + window.innerHeight + (4*(window.innerHeight))){
+    if (window.scrollY >= mainTop && window.scrollY < footerTop + window.innerHeight + (2*(window.innerHeight))){
         button.classList.remove('hidden');
     } else {
         button.classList.add('hidden');
@@ -53,4 +53,13 @@ document.addEventListener('scroll', function() {
      } else {
         button.classList.add('hidden');
      }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('menuToggle');
+    var sideMenu = document.getElementById('sideMenu');
+
+    menuToggle.addEventListener('click', function() {
+        sideMenu.classList.toggle('open');
+    });
 });
